@@ -1,0 +1,7 @@
+*.swp
+*.swo
+terraform.tfstate.*
+.terraform/
+plan.out
+/.idea/
+*.log
