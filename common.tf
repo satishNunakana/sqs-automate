@@ -3,7 +3,10 @@ provider "aws" {
 }
 
 terraform {
-  backend "s3" {
+    backend "s3" {
+    bucket = "ammo-bomma"
+    region     = "ap-southeast-1"
+    dynamodb_table  = "tf-state-lock"
   }
 }
 
